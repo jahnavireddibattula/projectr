@@ -1,12 +1,142 @@
-.otp-container {
+/* otp.css */
+
+.otp-container1 {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .left-side {
+    flex: 1;
+    padding: 20px;
+    margin-top: -47px !important;
+  }
+  
+  .right-side {
+    flex: 1;
+    padding: 20px;
+    margin-top: -20px;
+  }
+  
+  .forgotimg {
+    width: 100%;
+    height: auto;
+  }
+
+  .back-link {
+    cursor: pointer;
+    color: black;
+    margin-left: -280px;
+    margin-top: 10px;
+  }
+  
+  .back-link:hover {
+    color: black;
+  }
+  
+.otpheading{ 
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+  font-weight: bold;
+  margin-top: 20px !important;
+  margin-left: -220px;
+  font-size: 25px;
+  /* Additional styling for form */
+} 
+
+.otptextdata {
+  color:rgb(180, 174, 174);
+  margin-left: 190px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Adjust alignment as needed */
+}
+.otptextdata span {
+  margin-bottom: 5px; /* Add spacing between lines */
 }
 
-.left-side {
-    flex: 1;
+.otp-input-container {
+    display: flex;
+    gap: 50px; 
+    margin-left: 190px;
+    color: rgb(102, 18, 180);
+    margin-top: 30px;
 }
 
-.right-side {
-    flex: 1;
+
+.otpbox {
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    transition: border-color 0.3s;
 }
+
+.otpbox:focus {
+  width: 50px;
+  height: 50px;
+  font-size: 20px;
+  text-align: center;
+  border:none !important;
+  border-radius: 8px;
+  border-color: orange !important;
+}
+
+  
+  button[type="submit"] {
+    padding: 10px 20px;
+    background-color: rgb(88, 88, 243);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 30px;
+    width: 65%;;
+    margin-left: 120px;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: rgb(88, 88, 243);
+  } 
+
+  @media screen and (max-width: 768px) {
+    .forgotimg{
+      flex: none;
+      /* width: 160% !important; */
+      max-height: 1000px !important;
+      margin-top: 2px !important;
+      width: 600px !important; /* Set a fixed width */
+    height: 600px;
+    }
+  } 
+  
+  @media screen and (min-width: 769px) {
+    .forgotimg{
+      flex: none;
+      /* width: 160% !important; */
+      max-height: 1000px !important;
+      margin-top: 2px !important;
+      width: 200% !important; 
+      max-width: 125% !important;
+    height: 700px !important;
+    }
+  }
+  
+  /* Media query for medium screens */
+  @media screen and (min-width: 769px) and (max-width: 1024px) {
+    .forgotimg{
+      flex: none;
+      /* width: 160% !important; */
+      max-height: 1000px !important;
+      margin-top: 2px !important;
+      width: 800px; /* Set a fixed width */
+    height: 600px;
+    }
+  }
+  
+ 
+  
+  

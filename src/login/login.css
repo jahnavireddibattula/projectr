@@ -121,9 +121,10 @@ margin-top: 20px;
 }
 
 .loginbutton{
-  width: 100%;
+  width: 100% !important;
+  margin-left: 10px !important;
   border: 1px solid lightgrey;
-  background-color:rgb(156, 59, 225);
+  background-color:rgb(88, 88, 243);
   border-radius: 5px;
   height: 45px;
   text-decoration: lightgray;
@@ -137,6 +138,7 @@ margin-top: 20px;
 
 .image-container {
   flex: 1;
+  margin-top: -20px;
   /* background-color: rgb(239, 234, 243); */
    /* margin-right: -20%; */
    /* margin-left: -1%;

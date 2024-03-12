@@ -28,7 +28,7 @@ function ForgotPasswordPage() {
     };
 
     const handleSendOTP = () => {
-        navigate('/enter-otp'); 
+        navigate('/otp-password'); 
     };
 
     return (
@@ -43,9 +43,11 @@ function ForgotPasswordPage() {
                 <h3 className='forgotheading'>Forgot Password</h3>
                 {/* <p className='textdata'>Enter your registered email address. We'll send you a code<br/>to reset your password.</p>
                  */}
-                   <p className='textdata'>
-                   Enter your registered email address. We'll send you a code</p>
-                   <p className='textdata1'>to reset your password.</p>
+                 <div  className='textdata'>
+                   <span>
+                   Enter your registered email address. We'll send you a code</span>
+                   <span className='textdata1'>to reset your password.</span>
+                   </div>
                 <div>
                     <input
                         type="email"
